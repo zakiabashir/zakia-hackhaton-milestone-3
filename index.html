@@ -1,20 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume milestone 3</title>
+    <title>Resume milestone4</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+   
     <form id="resumeForm">
-        <h1> Dynamic Resume mile3 <br> Created By <span>Zakia Bashir</span></h1>
+        <h1> Dynamic Resume <br> Created By <span>Zakia Bashir</span></h1>
         <table align="center">
             <tr>
                 <td colspan="2">
                     <h2>Personal Info</h2>
                 </td>
+            </tr>
+            <tr>
+                <td>user-name:</td>
+                <td><input type="text" placeholder="username" id="username" required></td>
             </tr>
             <tr>
                 <td>First Name:</td>
@@ -49,8 +54,8 @@
                 <td><textarea name="address"  id="address" rows="3" required></textarea></td>
             </tr>
             <tr>
-                <td>Profile Picture:</td>
-                <td><input type="file" name="profile_picture" id="profile_picture" accept="image/*" required></td>
+                <td class="Picture">Profile Picture:</td>
+                <td><input type="file" name="profilepicture" id="profilepicture" accept="image/*" required></td>
             </tr>
             <tr>
                 <td colspan="2">
@@ -173,7 +178,9 @@
         <button type="submit" >Generate Resume Below</button>
     </form>
     
-    <div id="resumeOutput"></div>
-    <script src="index.js"></script>   
+    <div id="resumeOutput" class="resume-output hidden"></div>
+    
+    <script src="index.js" defer></script>   
 </body>
+
 </html>

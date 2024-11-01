@@ -1,4 +1,5 @@
 body {
+    overflow-x: hidden;
     font-family: Arial, sans-serif;
     background-image: url('nature.jpg'); /* Replace with your background image path */
     background-size: cover;
@@ -83,7 +84,100 @@ button:hover{
     color: rgb(67, 29, 25);
     border-radius: 3px 8px;
 }
-
+.hidden{
+    display: none;
+}
 #resumeOutput h2{
     color: rgb(213, 240, 101);
+}
+/* Responsive Design for Tablets */
+/* header media query */
+    
+  @media (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+  table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  table {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  table td {
+    display: flex;  /* Stack each cell */
+    width: 95%;
+    font-size: 14px;
+  }
+}
+    
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+    .container, #resumePage {
+        width: 95%;
+        padding: 16px;
+    };
+h1{
+    width: 100%;
+    font-size: small;
+}
+}
+    input[type="text"], input[type="email"], textarea {
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 13px 24px;
+    }
+
+    #resumePage img {
+        width: 130px;
+        height: 130px;
+    }
+
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 544px) {
+    .container, #resumePage {
+        width: 100%;
+        padding: 12px;
+    }
+
+
+    input[type="text"], input[type="email"], textarea {
+        font-size: 14px;
+    }
+}
+
+/* Gradient Background Animation */
+@keyframes gradientBackground {
+    0% {
+        background: linear-gradient(135deg, #8bc7ea, #feb47b);
+    }
+    50% {
+        background: linear-gradient(135deg, #d6fda2, #826552);
+    }
+    100% {
+        background: linear-gradient(135deg, #000000, #bf7e4d);
+    }
+}
+
+/* Text Fade-in Animation */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
