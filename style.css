@@ -1,12 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+/* Apply these to the body to remove any extra space on small screens */
 body {
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+body {
+    
     font-family: Arial, sans-serif;
     background-image: url('nature.jpg'); /* Replace with your background image path */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
-    padding: 20px;
+    
     align-items: center;
     background-blend-mode:color-burn
 }
@@ -78,6 +90,7 @@ button:hover{
 #resumeOutput{
     max-width: 550px;
     margin: auto;
+    line-height: 1.7rem;
     padding: 20px;
     border: 2px solid rgb(132, 132, 96);
     background-image: linear-gradient(to right, rgb(241, 236, 232), rgb(187, 158, 79),rgba(129, 122, 117, 0.616));
@@ -139,8 +152,8 @@ h1{
     }
 
     #resumePage img {
-        width: 130px;
-        height: 130px;
+        width: 110px;
+        height: 110px;
     }
 
 
